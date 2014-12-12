@@ -10,3 +10,6 @@ http://suchan.meteor.com/
 
 Se usa el algoritmo **Successive Shortest Path Algorithm**
 https://github.com/nicolaslopezj/final-proyect-algoritmica/blob/master/client/views/compute/compute.js
+
+
+Joaquín Díaz, Nicolás López
