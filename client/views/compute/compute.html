@@ -1,0 +1,23 @@
+<template name="compute">
+	{{> quickForm schema="ComputationSchema" id="computeFrom" buttonContent=false }}
+	<button class="btn btn-primary">Compute</button>
+
+	<hr>
+
+	{{# if getTotalTime }}
+		<h3>Result</h3>
+		<p>Correction time: {{ getTotalTime }} seconds</p>
+
+		{{# each result }}
+			<p>
+				<b>{{ getCorrectorName this }}</b>
+			</p>
+			<p>
+				<b>a:</b> {{ getNumberOfa this }}
+				<b>b:</b> {{ getNumberOfb this }}
+				<b>c:</b> {{ getNumberOfc this }}
+			</p>
+
+		{{/ each }}
+	{{/ if }}
+</template>

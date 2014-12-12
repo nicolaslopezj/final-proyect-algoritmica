@@ -1,0 +1,17 @@
+<template name="sidebar">
+	<ul class="sidebar">
+		<li class="separator-text">Actions</li>
+		<li class="{{ isActiveRoute regex='compute' }}">
+			<a href="{{ pathFor 'compute' }}">Compute</a>
+		</li>
+
+		<li class="separator-text">Correctors</li>
+		<li class="{{ isActiveRoute regex='correctors.index' }}">
+			<a href="{{ pathFor 'correctors.index' }}">Correctors</a>
+		</li>
+		<li class="{{ isActiveRoute regex='correctors.add' }}">
+			<a href="{{ pathFor 'correctors.add' }}">Add Corrector</a>
+		</li>
+		
+	</ul>
+</template>
